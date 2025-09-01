@@ -1,0 +1,1 @@
+# Semantik Etiketler Örneği ve Notları Bu Repo'da
