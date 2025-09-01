@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nihat'ın Blog'u</title>
+  <!-- Pico.css -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.1.1/css/pico.classless.min.css"
+  >
+</head>
+
+<body>
+  <!-- 
+    Notlar
+    indent düzenleme kısayolu -> shift+alt+f (win) / shift+opt+f (mac) 
+  
+    Semantik etiketler;
+
+    <header> : Sayfanın veya bir bölümün başlığı, logo, navigasyon menüsü gibi üst kısım bilgileri yazılır.
+    <nav> : Site içi gezinme bağlantılarını (menüler, linkler vb.) eklediğimiz etiket
+    <main> : Sayfanın ana ve eşsiz içeriği bulunur. Bir sayfada yalnızca bir tane olmalıdır.
+    <section> : Konu veya işlev açısından ilişkili içerik grupları (örn; bir haber beölümü)'nın bulunduğu bölüm.
+    <article> : Bağımsız kendi başına anlam taşıyan (örn; blog yazısı, haber, gönderi vb.) içeriklerin olduğu bölüm.
+    <aside> : Ana içerikten bağımsız yan bilgiler (örn; reklamlar, ek linkler, özetler vb.) olan bölüm.
+    <footer> : Sayfanın veya bir bölümün alt kısmı. İletişim, telif hakkı vb. gibi bilgiler bulunur.
+
+    id'ler unique yani eşsiz olmalı. Kullandığınız id'leri bir daha kullanamazsınız.
+    -->
+
+  <!-- üst kısım - başlık bölümü start-->
+  <header>
+    <h1>Nihat'ın Blog'u</h1>
+    <nav>
+      <!-- ul>li*4 bu kısa yol aşağıdaki ul navigasyonunu oluşturur -->
+      <ul>
+        <li><a href="#blog-yazi-html">HTML ile İlk Blog Yazım</a></li>
+        <li><a href="#blog-yazi-css">CSS ile Tasarıma Giriş</a></li>
+        <li><a href="#blog-yazi-js">JavaScript ile Etkileşim</a></li>
+        <li><a href="#yorumlar">Yorumlar</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- üst kısım - başlık bölümü end-->
+
+  <!-- Ana İçerik start -->
+  <main>
+    <!-- Yazı 1 start -->
+    <article id="blog-yazi-html">
+      <header>
+        <h2>HTML ile İlk Blog Yazım</h2>
+        <p><strong>Yazar:</strong> Nihat Duysak | 1 Eylül 2025</p>
+      </header>
+      <section>
+        <p>Bugün HTML ile ilk blog yazımı hazırladım. Semantik etiketler sayesinde sayfa yapısını daha düzenli ve anlamlı hale getirebiliyoruz</p>
+      </section>
+      <footer>
+        <p><strong>Kategori:</strong> HTML</p>
+        <p><a href="html-blog-detay.html">Detay'a git</a></p>
+      </footer>
+    </article>
+    <!-- Yazı 1 end -->
+
+    <!-- Yazı 2 start -->
+    <article id="blog-yazi-css">
+      <header>
+        <h2>CSS ile Tasarıma Giriş</h2>
+        <p><strong>Yazar:</strong> Fatih Hayrioğlu | 1 Eylül 2025</p>
+      </header>
+      <section>
+        <p>Css ile sayfalarımıza renkler, yazı tipleri ve düzen ekleyebiliyoruz. HTML iskelet gibiyse, CSS'de o iskeletin giysileri gibidir.</p>
+      </section>
+      <footer>
+        <p><strong>Kategori:</strong> CSS</p>
+        <p><a href="css-blog-detay.html">Detay'a git</a></p>
+      </footer>
+    </article>
+    <!-- Yazı 2 end -->
+
+    <!-- Yazı 3 start -->
+    <article id="blog-yazi-js">
+      <header>
+        <h2>JavaScript ile Etkileşim</h2>
+        <p><strong>Yazar:</strong> Orhan Ekici | 1 Eylül 2025</p>
+      </header>
+      <section>
+        <p>JavaScript sayesinde sayfamıza etkileşim kazandırabiliriz. Kullanıcıların tıklamalarına veya girişlerine yanıt verebiliriz.</p>
+      </section>
+      <footer>
+        <p><strong>Kategori:</strong> JavaScript</p>
+        <p><a href="js-blog-detay.html">Detay'a git</a></p>
+      </footer>
+    </article>
+    <!-- Yazı 3 end -->
+
+    <!-- Yorumlar Start -->
+     <section id="yorumlar">
+      <h3>Yorumlar</h3>
+      <article>
+        <p><strong>Ayşe: </strong>Çok faydalı bir yazı olmuş!</p>
+      </article>
+      <article>
+        <p><strong>Mehmet: </strong>Artık HTML ve CSS'i daha iyi anlıyorum.</p>
+      </article>
+     </section>
+    <!-- Yorumlar End -->
+
+    <!-- son yazılar start -->
+    <article>
+      <h3>Son Yazılar</h3>
+      <!-- ul>li*3>a -> kısayolu -->
+      <ul>
+        <li><a href="#blog-yazi-html">HTML ile İlk Blog Yazım</a></li>
+        <li><a href="#blog-yazi-css">CSS ile Tasarıma Giriş</a></li>
+        <li><a href="#blog-yazi-js">JavaScript ile Etkileşim</a></li>
+      </ul>
+    </article>
+    <!-- son yazılar end -->
+
+    <!-- son bölüm - start -->
+    <footer>
+      <p>&copy; 2025 Kodlama Günlüğü - Nihat'ın Blog'u | Tüm Haklar Saklıdır.</p>
+    </footer>
+    <!-- son bölüm - end -->
+
+  </main>
+  <!-- Ana İçerik end -->
+
+
+
+</body>
+
+</html>
